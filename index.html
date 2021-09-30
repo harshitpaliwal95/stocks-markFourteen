@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stock Value</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <div id="data"> -->
+      <div>
+        <h2>Check your profit lose</h2>
+        <form id="form">
+          <div id="input_data">
+            <label for="" class="labels">
+              <input
+                type="number"
+                id="purchase_price"
+                min="0.1"
+                step="0.1"
+                required
+              />Purchase Price.
+            </label>
+            <label for="" class="labels">
+              <input type="number" id="quantity" min="1" required />Stock
+              Quantity.
+            </label>
+            <label>
+              <input
+                type="number"
+                class="labels"
+                id="current_price"
+                min="0.1"
+                step="0.1"
+                required
+              />Current Price.
+            </label>
+            <input type="submit" id="btn" value="CHECK" />
+          </div>
+        </form>
+      </div>
+      <div id="loader">
+        <img src="img/roll.svg" alt="" />
+      </div>
+      <div id="output"></div>
+      <!-- </div> -->
+    </div>
+  </body>
+</html>
